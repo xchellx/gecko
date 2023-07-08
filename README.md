@@ -1,5 +1,5 @@
-# gecko
-gecko makes it easier to write gecko codes and share them in an open source way.
+# gecko.h
+gecko.h makes it easier to write gecko codes and share them in an open source way.
 
 ## Table of Contents
 - [Info](#info)
