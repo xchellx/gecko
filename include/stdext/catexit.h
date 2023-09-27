@@ -22,11 +22,17 @@
  * SOFTWARE.
  */
 
-#ifndef __STANDARD_H__
-#define __STANDARD_H__
-#include <__gen__/standard.h>
+#ifndef __ATEXIT_H__
+#define __ATEXIT_H__
+typedef void (*catexitHandler)(int sig);
 
-void sigonexit(int sig);
+extern volatile char catexitIsRegistered;
 
-int main(int argc, char **argv);
+extern volatile catexitHandler __cregsignalHandler__;
+
+void __catexitHandler__(void);
+
+void __csignalHandler__(int sig);
+
+int catexit(catexitHandler handler, char remove);
 #endif

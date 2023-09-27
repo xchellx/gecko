@@ -1,6 +1,11 @@
-# Enforce LF for shell scripts
+# Enforce LF for shell scripts (only used by MINGW or Linux)
 *.sh text=auto eol=lf
-# Enforce CRLF for batch scripts
+# Enforce CRLF for batch scripts (only used by Windows)
 *.bat text=auto eol=crlf
-# Enforce LF for codelist.csv
-codelist.csv text=auto eol=lf
+# Enforce LF for yaml files (only used by MINGW or Linux)
+*.yaml text=auto eol=lf
+# Enforce LF for source files (read by MINGW GCC or Linux GCC)
+*.c text=auto eol=lf
+*.h text=auto eol=lf
+# Enforce LF for python files (only used by MINGW or Linux)
+*.py text=auto eol=lf

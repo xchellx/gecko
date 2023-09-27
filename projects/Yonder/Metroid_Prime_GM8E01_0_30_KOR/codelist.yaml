@@ -1,0 +1,15 @@
+---
+!CodeList
+    project: Yonder_Metroid_Prime_GM8E01_0_30_KOR
+    title: Yonder's Code List for Metroid Prime (GM8E01 0-30 KOR)
+    game: Metroid Prime (GM8E01 0-30 KOR)
+    game_id: GM8E01
+    codes:
+        - !Code
+            file: toggle_phazon_beam_GM8E01_0_30_KOR
+            name: Toggle Phazon Beam (see notes) (GM8E01 0-30 KOR)
+            author: Yonder
+            description: |-
+                Toggle with L Trigger + R Trigger + DPad UP ALL at the SAME TIME.
+                Holding down the button combo and/or incrementally pressing the button combo is buggy.
+                NOTE: This uses gr6.

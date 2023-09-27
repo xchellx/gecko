@@ -1,2 +1,4 @@
 # compilation output
 **/bin
+# compile.py generated code output
+**/__gen__

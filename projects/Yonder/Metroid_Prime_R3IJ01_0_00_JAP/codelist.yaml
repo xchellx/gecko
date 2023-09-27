@@ -1,0 +1,15 @@
+---
+!CodeList
+    project: Yonder_Metroid_Prime_R3IJ01_0_00_JAP
+    title: Yonder's Code List for Metroid Prime (R3IJ01 0-00 JAP)
+    game: Metroid Prime (R3IJ01 0-00 JAP)
+    game_id: R3IJ01
+    codes:
+        - !Code
+            file: toggle_phazon_beam_R3IJ01_0_00_JAP
+            name: Toggle Phazon Beam (see notes) (R3IJ01 0-00 JAP)
+            author: Yonder
+            description: |-
+                Toggle with Minus + Plus + DPad UP ALL at the SAME TIME.
+                Holding down the button combo and/or incrementally pressing the button combo is buggy.
+                NOTE: This uses gr6 and gr7.

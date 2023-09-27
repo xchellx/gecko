@@ -22,11 +22,48 @@
  * SOFTWARE.
  */
 
-#ifndef __STANDARD_H__
-#define __STANDARD_H__
-#include <__gen__/standard.h>
+#ifndef __CMACROS_H__
+#define __CMACROS_H__
+#define CHR_dirseplinux '/'
+#define CHR_dirsepwindows '\\'
 
-void sigonexit(int sig);
+#ifdef _WIN32
+#define CHR_dirsep CHR_dirsepwindows
+#else
+#define CHR_dirsep CHR_dirseplinux
+#endif
 
-int main(int argc, char **argv);
+#ifndef SWAP16
+#define SWAP16(x) __builtin_bswap32((x))
+#endif
+#ifndef SWAP32
+#define SWAP32(x) __builtin_bswap32((x))
+#endif
+
+#define STR_TOSTR(s) #s
+#define STR_ISNULL(s) (!(s) || !*(s))
+
+#ifndef INLINE
+#define INLINE static inline __attribute__((always_inline))
+#endif
+#ifndef ALIGNED
+#define ALIGNED __attribute__((packed, aligned(1)))
+#endif
+#ifndef PACKED
+#define PACKED __attribute__((packed))
+#endif
+
+#ifdef __STDEXT_CMACROS_H_DEPDEFS__
+#ifdef _WIN32
+#ifdef __STDEXT_CMACROS_H_DEPINCL__
+#include <string.h>
+#endif
+#define cstrcmpi stricmp
+#else
+#ifdef __STDEXT_CMACROS_H_DEPINCL__
+#include <strings.h>
+#endif
+#define cstrcmpi strcasecmp
+#endif
+#endif
 #endif

@@ -22,11 +22,23 @@
  * SOFTWARE.
  */
 
-#ifndef __STANDARD_H__
-#define __STANDARD_H__
-#include <__gen__/standard.h>
+#ifndef __CGETCHAR_H__
+#define __CGETCHAR_H__
+#ifndef _WIN32
+#include <termios.h>
 
-void sigonexit(int sig);
+extern volatile struct termios __cgc_oldf_direct__;
+extern volatile struct termios *__cgc_oldf__;
+#endif
 
-int main(int argc, char **argv);
+extern volatile char ctermIsModified;
+extern volatile char ctermLoopSafety;
+
+void crestoreTerm(void);
+
+char cgetchar(char echoc);
+
+#define cgetch() cgetchar(0)
+
+#define cgetche() cgetchar(1)
 #endif

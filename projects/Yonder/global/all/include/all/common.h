@@ -22,11 +22,7 @@
  * SOFTWARE.
  */
 
-#ifndef __STANDARD_H__
-#define __STANDARD_H__
-#include <__gen__/standard.h>
+#ifndef __ALL_COMMON_H__
+#define __ALL_COMMON_H__
 
-void sigonexit(int sig);
-
-int main(int argc, char **argv);
 #endif

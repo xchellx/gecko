@@ -1,0 +1,24 @@
+---
+!CodeList
+    project: Metroid_Prime_GM8E01_0_00_USA
+    title: Code List for Metroid Prime (GM8E01 0-00 USA)
+    author: Yonder
+    game: Metroid Prime (GM8E01 0-00 USA)
+    game_id: GM8E01
+    codes:
+        - !Code
+            file: toggle_phazon_beam_part_1_GM8E01_0_00_USA
+            name: Toggle Phazon Beam (Part 1) (see description) (GM8E01 0-00 USA)
+            author: Yonder
+            description: |-
+                Part 1 of this code. PART 2 IS REQUIRED!
+                Toggle with L Trigger + R Trigger + DPad UP.
+                NOTE: This uses gr6 and gr7.
+        - !Code
+            file: toggle_phazon_beam_part_2_GM8E01_0_00_USA
+            name: Toggle Phazon Beam (Part 2) (see description) (GM8E01 0-00 USA)
+            author: Yonder
+            description: |-
+                Part 2 of this code. PART 1 IS REQUIRED!
+                Toggle with L Trigger + R Trigger + DPad UP.
+                NOTE: This uses gr6 and gr7.

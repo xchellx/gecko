@@ -22,11 +22,26 @@
  * SOFTWARE.
  */
 
-#ifndef __STANDARD_H__
-#define __STANDARD_H__
-#include <__gen__/standard.h>
+#ifndef __YONDER_METROID_PRIME_GM8E01_0_00_USA_COMMON_H__
+#define __YONDER_METROID_PRIME_GM8E01_0_00_USA_COMMON_H__
+#define ADDR_GameID 0x00000000
+#define VAL_GameID_GM8E 0x474D3845
 
-void sigonexit(int sig);
+#define ADDR_GameRevision 0x00000007
+#define VAL_GameRevision 0x0
 
-int main(int argc, char **argv);
+#define CStateManager_xb54_finalInput_x2c 0x0045AD28
+#define CFinalInput_x2c_b29_L 0x4
+#define CFinalInput_x2c_b30_R 0x2
+#define CFinalInput_x2c_b31_DPUp 0x1
+
+#define CPlayer_x490_gun 0x0046BE0C
+
+#define CPlayerGun_x33c_phazonBeamState 0x0000033C
+#define EPhazonBeamState_Active 0x3
+#define EPhazonBeamState_Inactive 0x0
+
+#define CPlayerGun_x835 0x00000835
+#define CPlayerGun_x835_25_inPhazonBeam 0x40
+#define CPlayerGun_x835_24_canFirePhazon 0x80
 #endif
